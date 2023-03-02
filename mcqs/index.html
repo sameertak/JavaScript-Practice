@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div id="popup1" class="card">
+        <div class="header">
+            <h1 class="header__title">Welcome!</h1>
+        </div>
+
+        <form class="info">
+            <p class="title">Ready to give the quiz?</p>
+            <input id="yes" type="button" class="action yes" value="Yes!"/>
+            <input id="no" type="button" class="action no" value="No!"/>
+        </form>
+    </div>
+
+    <div id="popup2" class="card">
+        <div class="header">
+            <h1 class="header__title">Okay, come back when you are ready!</h1>
+        </div>
+
+        <form class="info">
+            <input id="yes2" type="button" class="action yes" value="I am ready now!"/>
+        </form>
+    </div>
+
+    <div id="popup3" class="card">
+        <div class="header">
+            <h1 class="header__title">Congratulations!</h1>
+        </div>
+
+        <form class="info">
+            <p id="score" class="title">You Scored 5/5</p>
+        </form>
+    </div>
+
+    <div class="card" id="questions">
+        <div class="header">
+            <h1 class="header__title" id="question_heading"></h1>
+        </div>
+        <form class="info">
+            <p id="question__title" class="title">What iasdigasdyasgydasgydg8asdvs 1+1?</p>
+            <div class="options">
+                <div class="option">
+                    <div class="option__option">
+                        <label class="switch">
+                            <input class="chk" id="1" type="radio" name="answer">
+                            <span class="slider"></span>
+                        </label>
+                        <label id="option1" class="option__item">HTML</label>
+                    </div>
+
+                    <div class="option__option">
+                        <label class="switch">
+                            <input class="chk" id="2" type="radio" name="answer">
+                            <span class="slider"></span>
+                        </label>
+                        <label id="option2" class="option__item">HTML</label>
+                    </div>
+                </div>
+
+                <div class="option">
+                    <div class="option__option">
+
+                        <label class="switch">
+                            <input class="chk" id="3" type="radio" name="answer">
+                            <span class="slider"></span>
+                        </label>
+                        <label id="option3" class="option__item">HTML</label>
+                    </div>
+
+                    <div class="option__option">
+
+                        <label class="switch">
+                            <input class="chk" id="4" type="radio" name="answer">
+                            <span class="slider"></span>
+                        </label>
+                        <label id="option4" class="option__item">HTML</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="footer">
+            <p id="number" class="tag">1/5</p>
+            <button id="next" type="button" class="action">Next</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
