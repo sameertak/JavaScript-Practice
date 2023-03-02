@@ -1,0 +1,117 @@
+body {
+  font-family: "VT323", monospace;
+  background-color: black;
+  height: calc(100vh - 16px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.again {
+  cursor: pointer;
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: white;
+}
+
+.prompt {
+  color: white;
+  font-size: 2rem;
+}
+
+main {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.guess__prompt {
+  font-size: 4.5rem;
+  color: white;
+}
+
+.guess__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 7.5rem;
+  width: 7.5rem;
+  font-size: 4.5rem;
+  z-index: 10;
+}
+
+.line {
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  z-index: -1;
+}
+
+.bottom {
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom .left {
+  margin-top: 5.5rem;
+
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.input__box {
+  border: 5px solid white;
+}
+
+.input {
+  text-align: center;
+  font: inherit;
+  font-size: 3.5rem;
+  width: 10.5rem;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+}
+
+.check {
+  margin-left: 2.5rem !important;
+  font: inherit;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  margin: auto;
+}
+
+.check:hover {
+  cursor: pointer;
+}
+
+.prediction__prompt {
+  color: white;
+}
+
+.bottom .right {
+  /* margin-left: 10.5rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.score {
+  color: white;
+}
+.highscore {
+  color: white;
+}
